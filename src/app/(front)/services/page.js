@@ -7,37 +7,37 @@ export default function Services() {
       id: 1,
       title: "Web Development",
       description: "We build fast, responsive, and modern websites using the latest technologies.",
-      image: "/images/web-dev.jpg",
+      image: "/bird.jpeg",
     },
     {
       id: 2,
       title: "UI/UX Design",
       description: "Clean and user-friendly design that enhances user experience and engagement.",
-      image: "/images/ui-ux.jpg",
+      image: "/bird-1.jpeg",
     },
     {
       id: 3,
       title: "E-commerce Solutions",
       description: "Complete online store setup with secure payment and smooth user flow.",
-      image: "/images/ecommerce.jpg",
+      image: "/bird-2.jpg",
     },
     {
       id: 4,
       title: "SEO Optimization",
       description: "Improve your website ranking and visibility on search engines.",
-      image: "/images/seo.jpg",
+      image: "/bird-3.jpg",
     },
     {
       id: 5,
       title: "Mobile App Development",
       description: "Cross-platform mobile apps with high performance and great UI.",
-      image: "/images/mobile-app.jpg",
+      image: "/bird-4.jpg",
     },
     {
       id: 6,
       title: "Maintenance & Support",
       description: "Ongoing support and maintenance to keep your website up-to-date.",
-      image: "/images/support.jpg",
+      image: "/bird-5.jpg",
     },
   ];
 
@@ -45,12 +45,13 @@ export default function Services() {
     <div className="grid grid-cols-3 gap-6">
       {services.map((service) => (
         <div className="p-2 rounded-lg bg-gray-200" key={service.id}>
-          <div>
+          <div className=" h-72 w-full">
             <Image
               src={service.image}
               alt={service.title}
               width={500}
               height={300}
+              className="w-full h-full object-cover rounded-t-lg"
             />
           </div>
           <h2 className="text-xl font-bold mt-4">{service.title}</h2>
