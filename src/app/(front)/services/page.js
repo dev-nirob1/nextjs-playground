@@ -44,7 +44,7 @@ export default function Services() {
   return <div className="container mx-auto py-8">
     <div className="grid grid-cols-3 gap-6">
       {services.map((service) => (
-        <div className="p-2 rounded-lg bg-gray-200" key={service.id}>
+        <div className="p-2 rounded-lg bg-gray-100" key={service.id}>
           <div className=" h-72 w-full">
             <Image
               src={service.image}
