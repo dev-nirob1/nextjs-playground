@@ -45,12 +45,15 @@ export default function Services() {
     <div className="grid grid-cols-3 gap-6">
       {services.map((service) => (
         <div className="p-2 rounded-lg bg-gray-100" key={service.id}>
-          <div className=" h-72 w-full">
+          <div className=" h-72 w-full relative">
             <Image
               src={service.image}
               alt={service.title}
               width={500}
               height={300}
+              // fill={true}
+              // quality={100}
+              priority={true}
               className="w-full h-full object-cover rounded-t-lg"
             />
           </div>
