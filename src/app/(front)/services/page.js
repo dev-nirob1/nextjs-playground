@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Our Services",
+  description: "Explore the wide range of services we offer to help your business grow and succeed online."
+}
+
 export default function Services() {
 
   const services = [
