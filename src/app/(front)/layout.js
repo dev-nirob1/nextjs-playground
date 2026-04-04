@@ -15,7 +15,10 @@ const openSans = Open_Sans({
 
 
 export const metadata = {
-  title: '%s | My Next.js Playground',
+  title:{
+      default: 'My Next.js Playground',
+      template: '%s | My Next.js Playground',
+  },
   description: "Here I code for learning and testing Next.js features and capabilities.",
 };
 
