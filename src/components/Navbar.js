@@ -17,13 +17,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/servercompo" className="hover:text-gray-300">
-              server component
-            </Link>
-          </li>
-          <li>
-            <Link href="/clientcompo" className="hover:text-gray-300">
-              Client component
+            <Link href="/posts" className="hover:text-gray-300">
+              Posts
             </Link>
           </li>
           <li>
