@@ -13,6 +13,7 @@ const ClientFetching = () => {
             const res = await fetch(`https://api.genderize.io?name=${userName}`)
             const data = await res.json()
             console.log('data is here', data);
+            await new Promise(resolve => setTimeout(resolve, 2000));
             setData(data);
         }
         fetchData();
