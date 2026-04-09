@@ -12,8 +12,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-300">
-              About
+            <Link href="/datafetching/server" className="hover:text-gray-300">
+              server fetching
             </Link>
           </li>
           <li>
@@ -21,11 +21,11 @@ const Navbar = () => {
               Posts
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/services" className="hover:text-gray-300">
               Services
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact" className="hover:text-gray-300">
               Contact
