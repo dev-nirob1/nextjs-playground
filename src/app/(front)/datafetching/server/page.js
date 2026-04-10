@@ -6,7 +6,7 @@ const ServerFetching = async ({ searchParams }) => {
     const userName = await searchParams
     console.log(userName);
     // fetching data from api
-    const res = await fetch(`https://api.genderize.io?name=${userName.name}`)
+    const res = await fetch(`https://api.genderize.io?name=${userName.name }`)
     await new Promise((resolve)=> {
         resolve()
     }, 5000);
