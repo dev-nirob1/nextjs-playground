@@ -11,7 +11,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/datafetching/server" className="hover:text-gray-300">
               server fetching
             </Link>
@@ -19,8 +19,8 @@ const Navbar = () => {
           <li>
             <Link href="/posts" className="hover:text-gray-300">
               Posts
-            </Link>
-          </li>
+            </Link> 
+          </li> */}
           {/* <li>
             <Link href="/services" className="hover:text-gray-300">
               Services
@@ -29,6 +29,11 @@ const Navbar = () => {
           <li>
             <Link href="/contact" className="hover:text-gray-300">
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link href="/login" className="hover:text-gray-300 px-4 py-3 bg-blue-500 rounded">
+                Login
             </Link>
           </li>
           <li>
