@@ -48,7 +48,11 @@ const Register = () => {
                             Register
                         </button>
                     </div>
+                    <button name='action' value='google' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4'>
+                        Sign in with Google
+                    </button>
                 </form>
+
                 <Link href="/login" className='block text-center mt-4 text-blue-500 hover:text-blue-700'>
                     Already have an account? Login
                 </Link>
