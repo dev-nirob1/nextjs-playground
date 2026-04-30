@@ -1,16 +1,12 @@
+import GoogleLogin from '@/components/authentication/GoogleLogin';
 import Link from 'next/link';
 import React from 'react';
-import { signIn } from '@/auth';
 const Login = () => {
     return (
         <div className='w-full min-h-screen flex items-center justify-center bg-green-200'>
             <div className='w-full max-w-md bg-white rounded-lg shadow-md p-8'>
                 <h1 className='text-3xl font-bold text-center mt-10'>Login </h1>
-                <form
-                    action={async () => {
-                        "use server"
-                        await signIn("google")
-                    }}>
+                <form>
                     <div className='mb-4'>
                         <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='username'>
                             Username
@@ -41,10 +37,10 @@ const Login = () => {
                             Sign In
                         </button>
                     </div>
-                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4'>
-                    Sign in with Google
-                </button>
+
                 </form>
+                {/* google login  */}
+                <GoogleLogin />
                 <Link href="/register" className='block text-center mt-4 text-blue-500 hover:text-blue-700'>
                     Don`t have an account? Register
                 </Link>
