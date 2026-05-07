@@ -11,6 +11,11 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+          <li>
+            <Link href="/project" className="hover:text-gray-300">
+              Project
+            </Link>
+          </li>
           {/* <li>
             <Link href="/datafetching/server" className="hover:text-gray-300">
               server fetching
@@ -26,7 +31,7 @@ const Navbar = () => {
               Services
             </Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link href="/contact" className="hover:text-gray-300">
               Contact
             </Link>
@@ -40,7 +45,7 @@ const Navbar = () => {
             <Link href="/dashboard" className="hover:text-gray-300">
               Dashboard
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
