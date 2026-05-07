@@ -1,4 +1,4 @@
-import { createProperty } from "@/config/properties";
+import { createProperty, getAllProperties } from "@/config/properties";
 import { NextResponse } from "next/server";
 
 export const POST = async (request) => {
@@ -11,4 +11,18 @@ export const POST = async (request) => {
         },
         { status: 201 }
     );
+}
+export const GET = async () => {
+    try {
+        const properties = await getAllProperties();
+        return NextResponse.json(
+            {
+                message: "Properties retrieved successfully",
+                properties
+            },
+            { status: 200 }
+        );
+    } catch (error) {
+        
+    }
 }
