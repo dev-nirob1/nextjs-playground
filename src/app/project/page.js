@@ -5,7 +5,7 @@ import React from 'react';
 const Project = async () => {
     const res = await fetch('http://localhost:3000/api/properties');
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     return (
         <div>
             All property
@@ -19,7 +19,7 @@ const Project = async () => {
                             <div className="p-4">
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
-                                <Link href={`/project/${item._id}`} className="p-2 block bg-blue-500 text-white rounded hover:bg-blue-600">View Details</Link>
+                                <Link href={`/project/property/${item._id}`} className="p-2 block bg-blue-500 text-white rounded hover:bg-blue-600">View Details</Link>
                             </div>
                         </div>
                     })
