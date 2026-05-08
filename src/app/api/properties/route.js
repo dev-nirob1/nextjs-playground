@@ -30,14 +30,3 @@ export const GET = async () => {
 // export const revalidate = 0;
 // export const runtime = 'edge';
 // export const fetchCache = 'force-no-store';
-export const getPropertyById = async (id) => {
-    try {
-        const singleProperty = await getPropertyById(id);
-        return NextResponse.json({
-            message: "Property retrieved successfully",
-            singleProperty
-        })
-    } catch (error) {
-        console.log(error.message);
-    }
-}

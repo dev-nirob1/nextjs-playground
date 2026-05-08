@@ -23,7 +23,10 @@ export const getAllProperties = async () => {
     }
 }
 
+// get single property by id
 export const getPropertyById = async (id) => {
+    console.log('id from config',id);
+
     try {
         const client = await clientPromise;
         const db = client.db('next-auth');
